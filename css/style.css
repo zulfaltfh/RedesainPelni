@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --merah: #BA0716;
+    --orange: #ff9d48;
+    --white: #ffff;
+    --font: #111;
+}
+
+body{
+    background-color: var(--white);
+    color: var(--font);
+}
+
+/* NAVBAR */
+
+header{
+    display: block;
+}
+.container {
+    position: fixed;
+    top: 0;
+    z-index: 9000;
+    width: 100%;
+    background-color: white;
+    /* border-bottom: 1px solid #ddd; */
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.11)
+}
+
+.wrapper {
+    width: 1320px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.wrapper .logo {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.wrapper .logo img {
+    height: 48px;
+    margin: 16px 0;
+}
+
+.wrapper ul.nav-item {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper ul.nav-item li {
+    margin: 0 12px;
+    padding: 16px 0;
+    position: relative;
+}
+
+.wrapper ul.nav-item li a {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    letter-spacing: .8px;
+    color: #111;
+    text-align: left;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative; 
+    text-decoration: none;
+}
+
+/* .wrapper ul.nav-item li a:hover {
+    
+} */
+
+button {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 14px 28px 12px;
+    margin-right: 12px;
+    border-radius: 5px;
+    border: none;
+}
+
+.wrapper .sisi-kanan {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .sisi-kanan .language img{
+    height: 30px;
+    width: 30px;
+    align-items: center;
+}
+
+.wrapper .sisi-kanan .btn-login {
+    background-color: transparent;
+    color: var(--orange);
+    padding: 0;
+}
+
+.wrapper .sisi-kanan .btn-login:hover {
+    color: #ff7d0b;
+}
+
+.wrapper .sisi-kanan .btn-regist {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.wrapper .sisi-kanan .btn-regist:hover {
+    background-color: #ffa95e;
+}
+
+
+/* BANNER */
+
+section {
+    display: block;
+}
+
+.banner img {
+    margin-top: 84px;
+    border: 1px;
+    height: auto;
+    max-width: 100%;
+}
