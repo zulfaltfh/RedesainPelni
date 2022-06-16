@@ -68,7 +68,7 @@ header{
 .wrapper ul.nav-item li a {
     display: block;
     font-family: 'Lato', sans-serif;
-    font-size: 13px;
+    font-size: 11px;
     letter-spacing: .8px;
     color: #111;
     text-align: left;
@@ -86,7 +86,7 @@ button {
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 11px;
     padding: 14px 28px 12px;
     margin-right: 12px;
     border-radius: 5px;
