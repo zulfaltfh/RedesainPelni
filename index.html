@@ -39,7 +39,7 @@
                     </li>
                 </ul>
                 <div class="sisi-kanan">
-                    <button class="btn-login">Login</button>
+                    <button class="btn-login" onclick="document.getElementById('id01').style.display='block'">Login</button>
                     <button class="btn-regist">Registrasi</button>
                     <a class=language href="#">
                         <img src="assets/images/ic_sharp-g-translate.png" alt="">
@@ -49,15 +49,63 @@
         </nav>
     </header>
     
+<<<<<<< HEAD
 
     <section>
         <div class="banner">
             <img src="assets/images/image 4.png" alt="">
         </div>
+=======
+    <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
+    <div id="id01" class="modal">
+    
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="assets/images/logo-onlygambar.png" alt="Avatar" class="avatar">
+            <h3 style="color: var(--merah); margin-top: 16px;"> Login </h3>
+            </div>
+    
+            <div class="container2">
+            <label for="uname" style="color: var(--merah);"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+    
+            <label for="psw" style="color: var(--merah);"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+                
+            <button type="submit" class="button-login">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            </div>
+    
+            <!-- <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+            </div> -->
+        </form>
+        </div>
+    
+    <section class="banner">
+        <img src="assets/images/image 4.png" alt="">
+>>>>>>> eb2dcc24ad2d21891ef13cda748729c31f9d7c6f
         <div class="form">
             <h3>Reservasi Tiket</h3>
             <h3>Reservasi Kargo</h3>
         </div>
     </section>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    
 </body>
 </html>
