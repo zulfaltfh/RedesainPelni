@@ -8,7 +8,7 @@
 }
 :root {
     --merah: #BA0716;
-    --orange: #ff9d48;
+    --orange: #ff9233;
     --white: #ffff;
     --font: #111;
 }
@@ -16,14 +16,16 @@
 body{
     background-color: var(--white);
     color: var(--font);
+    font-family: 'Lato', sans-serif;
 }
 
-/* NAVBAR */
+/* ----- NAVBAR ------ */
 
 header{
     display: block;
 }
-.container {
+
+.container1 {
     position: fixed;
     top: 0;
     z-index: 9000;
@@ -67,8 +69,7 @@ header{
 
 .wrapper ul.nav-item li a {
     display: block;
-    font-family: 'Lato', sans-serif;
-    font-size: 11px;
+    font-size: 13px;
     letter-spacing: .8px;
     color: #111;
     text-align: left;
@@ -81,16 +82,17 @@ header{
 /* .wrapper ul.nav-item li a:hover {
     
 } */
-
 button {
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 11px;
-    padding: 14px 20px 12px;
-    margin-right: 12px;
+    font-size: 14px;
     border-radius: 5px;
     border: none;
+}
+.btn-login, .btn-regist {
+    padding: 14px 20px 12px;
+    margin-right: 12px;
 }
 
 .wrapper .sisi-kanan {
@@ -124,27 +126,96 @@ button {
 }
 
 
-/* BANNER */
+/* ----- BANNER ----- */
 
-section {
+section .banner{
     display: block;
     position: relative;
 }
 
-section:after {
+section .banner:after {
     clear: both;
     display: block;
     content: " ";
 }
 
-section .banner img {
+.banner .gambar-header img {
     margin-top: 84px;
     border: 1px;
     height: auto;
     max-width: 100%;
+    height: auto;
 }
 
-/* login */
+
+
+/* ----- CONTENT -----*/
+
+.home-logistik, .home-lifestyle {
+    margin-top: 48px;
+}
+
+.home-logistik .wrapper{
+    padding: 0;
+    margin: auto 0;
+    width: auto;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.col-4 {
+    float: left;
+    max-width: 44.44444%;
+    padding: 0;
+    margin: 0;
+}
+
+.col-5 {
+    float: left;
+    width: 55.55555%;
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    margin-left: 36px;
+    margin-right: 10px;
+}
+
+.content h1, h4 { 
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 24px;
+}
+
+.content h4 {
+    color: var(--merah);
+    font-weight: 700;
+    font-size: 17px;
+}
+.content h1{
+    font-size: 48px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.content p {
+    color: #888888;
+    font-weight: 500;
+}
+.more {
+    padding: 16px 24px;
+    color: #ffff;
+    background-color: var(--orange);
+}
+
+
+
+
+/* ----- login ----- */
 /* Full-width input fields */
 input[type=text], input[type=password] {
     width: 100%;
