@@ -128,9 +128,16 @@ button {
 
 section {
     display: block;
+    position: relative;
 }
 
-.banner img {
+section:after {
+    clear: both;
+    display: block;
+    content: " ";
+}
+
+section .banner img {
     margin-top: 84px;
     border: 1px;
     height: auto;
