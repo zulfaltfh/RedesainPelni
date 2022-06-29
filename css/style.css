@@ -8,7 +8,7 @@
 }
 :root {
     --merah: #BA0716;
-    --orange: #ff9233;
+    --orange: #ff7c10;
     --white: #ffff;
     --font: #111;
 }
@@ -25,7 +25,7 @@ header{
     display: block;
 }
 
-.container1 {
+nav {
     position: fixed;
     top: 0;
     z-index: 9000;
@@ -108,32 +108,37 @@ button {
 
 .wrapper .sisi-kanan .btn-login {
     background-color: transparent;
-    color: var(--orange);
+    color: var(--font);
     padding: 0;
 }
 
 .wrapper .sisi-kanan .btn-login:hover {
-    color: #ff7d0b;
+    color: var(--merah);
 }
 
 .wrapper .sisi-kanan .btn-regist {
-    background-color: var(--orange);
+    background-color: var(--merah);
     color: var(--white);
 }
 
 .wrapper .sisi-kanan .btn-regist:hover {
-    background-color: #ffa95e;
+    background-color: #c70919;
 }
 
 
 /* ----- BANNER ----- */
 
-section .banner{
+section {
     display: block;
-    position: relative;
 }
 
-section .banner:after {
+.banner{
+    display: block;
+    position: relative;
+    margin-bottom: 8%;
+}
+
+.banner:after {
     clear: both;
     display: block;
     content: " ";
@@ -151,8 +156,13 @@ section .banner:after {
 
 /* ----- CONTENT -----*/
 
+.home-content {
+    position: relative;
+}
+
 .home-logistik, .home-lifestyle {
-    margin-top: 48px;
+    position: relative;
+    margin-bottom: 10%;
 }
 
 .home-logistik .wrapper{
@@ -167,23 +177,25 @@ section .banner:after {
     clear: both
 }
 
+.col-2 {
+    float: left;
+    width: 22.22222%;
+    position: relative;
+}
+
 .col-4 {
     float: left;
-    max-width: 44.44444%;
-    padding: 0;
-    margin: 0;
+    width: 44.44444%;
 }
 
 .col-5 {
     float: left;
     width: 55.55555%;
-    padding: 0;
-    margin: 0;
 }
 
 .content {
     margin-left: 36px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
 }
 
 .content h1, h4 { 
@@ -207,14 +219,48 @@ section .banner:after {
     color: #888888;
     font-weight: 500;
 }
+
 .more {
     padding: 16px 24px;
     color: #ffff;
     background-color: var(--orange);
 }
 
+.col-2 .text-block {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3);
+    margin: 36px 15px;
+    width: 80%;
+    padding: 15px;
+}
 
+.col-2 .text-block h1{
+    flex: none;
+    font-weight: 800;
+    font-style: italic;
+    padding-bottom: 20px;
+    position: relative;
+    box-sizing: border-box;
+}
 
+.col-2 .text-block p {
+    margin: 0;
+    margin-top: 20px;
+    color: #fff;
+    overflow: hidden;
+    height: 50px;
+}
+
+.col-2 .text-block h1::before {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: #f98015;
+    bottom: 0;
+}
 
 /* ----- login ----- */
 /* Full-width input fields */
