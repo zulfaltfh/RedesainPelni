@@ -257,8 +257,297 @@
                 </div>
             </div>
         </div>
+        <style>
+            .card {
+              box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+              transition: 0.3s;
+              width: 248px;
+              border-radius: 5px;
+              margin: 10px  auto;
+            }
+            
+            .card:hover {
+              box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            }
+            
+            .card img {
+                width: 248px;
+                border-radius: 5px 5px 0 0;
+            }
+            
+            .container {
+                margin-bottom: 15px;
+                padding: 24px 12px 36px 12px;
+                text-align: center;
+                display: block;
+                justify-content: center;
+            }
+            
+            .container h3 {
+                padding-bottom: 15px;
+                position: relative;
+                box-sizing: border-box;
+            }
+
+            .container p {
+                color: #5F5F5F; 
+                font-weight: 500; 
+                padding-top: 20px;
+            }
+
+            .home-layanan .wrapper .box-layanan .card .container h3::before {
+                content: "";
+                position: absolute;
+                width: 28px;
+                height: 2px;
+                background: #f98015;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .home-agen{
+                height: 580px;
+                padding-top: 120px;
+                box-sizing: border-box;
+                position: relative;
+                /* background-size: 100%; */
+            }
+
+            .home-agen::after{
+                clear: both;
+                display: block;
+                content: " ";
+            }
+
+        </style>
+        <div class="home-layanan">
+            <div class="wrapper">
+                <div class="content">
+                    <h4>LAYANAN</h4>
+                    <h2>Layanan Lainnya</h2>
+                    <p style="margin-bottom: 48px; width: 40%;">Bisnis penunjang dan unit bisnis strategis PT PELNI dari keagenan dan galangan kapal, perhotelan serta penyewaan aset</p>
+                </div>
+                <div class="box-layanan" style="position: relative; display: flex;">
+                    <div class="card">
+                        <img src="assets/images/image 11-0.png" alt="Avatar" height="auto">
+                        <div class="container">
+                          <h3><b>Hotel Bahtera</b></h3> 
+                          <p>Lokasi strategis di Cipayung, Puncak, Jawa Barat</p> 
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/images/image 11-1.png" alt="Avatar" height="auto">
+                        <div class="container">
+                          <h3><b>Galangan Surya</b></h3> 
+                          <p>Menangani dok kapal hingga 500 GT</p> 
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/images/image 11-2.png" alt="Avatar" height="auto">
+                        <div class="container">
+                          <h3><b>PELNI Asset</b></h3> 
+                          <p>Asset gedung Pelni tersebar di seluruh Indonesia</p> 
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/images/image 11-3.png" alt="Avatar" height="auto">
+                        <div class="container">
+                          <h3><b>Keagenan Kapal </b></h3> 
+                          <p>Keagenan adalah salah satu Bisnis Unit PT PELNI (Persero)</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-agen" style="background: url('assets/images/image 12.png') no-repeat center; margin-bottom: 0%;">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="content" style="color: #ffff; position: relative;">
+                        <h4 style="color: #ffff;">KEAGENAN KAPAL</h4>
+                        <h2 style="width: 50%;">Menjangkau Seluruh Perairan Indonesia</h2>
+                        <p style="font-weight:400; width: 40%; color: rgba(255, 255, 255, 0.918);">Mengageni kapal domestik maupun asing, mulai dari pengurusan perijinan, kebutuhan bunker, dan segala kebutuhan perjalanan pelayaran selama berada di wilayah perairan maupun daratan Indonesia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     
+    <style>
+        footer {
+            display: block;
+        }
+        footer .top {
+            padding-top: 50px;
+            border-top: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        footer .top .wrapper {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 25px;
+            box-sizing: border-box;
+        }
+        footer .top .col {
+            float: left;
+            width: 230px;
+            position: relative;
+        }
+        footer .middle {
+            margin: 35px 0;
+        }
+        .left, .right {
+            display: inline;
+        }
+        .left {
+            float: left;
+        }
+        .right {
+            float: right;
+        }
+        footer .bottom {
+            padding: 30px 0;
+            background: #bbb;
+            border-top: 1px solid #999;
+            box-sizing: border-box;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        footer .top .col .socmed a .images {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 35px;
+            border-radius: 100%;
+            background: #666;
+            transition: all .3s ease-out;
+            -webkit-transition: all .3s ease-out;
+        }
+
+        footer .middle .box .col {
+            float: left;
+            margin-right: 35px;
+        }
+
+        footer .middle .box .col h4 {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 35px;
+            color: #333;
+        }
+
+        footer .top .col .socmed a .images img {
+            vertical-align: middle;
+        }
+
+        footer .top .col .socmed {
+            float: left;
+            margin-top: 20px;
+        }
+
+        footer .top .col a,
+        footer .top .col h4 {
+            font-weight: 900;
+            font-size: 16px;
+            color: #333;
+            line-height: 26px;
+        }
+
+        footer .top .col .socmed a {
+            float: left;
+            margin-left: 10px;
+        }
+    </style>
+    <footer>
+        <div class="top">
+            <div class="wrapper">
+                <div class="col">
+                    <div class="logo-footer">
+                        <img src="https://www.pelni.co.id/cfind/source/images/website-setting/logo-new.png">
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>PT. PELNI (Persero) HQ</h4>
+                    <p>Jl. Gajah Mada No. 14,<br />
+                        Jakarta Pusat, 10130<br />
+                        DKI Jakarta, Indonesia</p>
+
+                </div>
+                <div class="col">
+                    <h4>Kontak Pusat</h4>
+                    <p>T. 162 (Jabodetabek)</p>
+                    <p>F. +62 21 6385 4130</p>
+                    <p>E. infopelni162@pelni.co.id</p>
+                </div>
+                <div class="col">
+                    <h4><a href="https://www.pelni.co.id/tender">TENDER</a></h4>
+                    <h4><a href="https://www.pelni.co.id/karir">KARIR</a></h4>
+                    <h4><a href="https://www.pelni.co.id/faq-id">FAQ</a></h4>
+                </div>
+                <div class="col">
+                    <h4>Media Sosial Kami</h4>
+                    <div class="socmed">
+                        <a href="https://www.facebook.com/pelni162/" target="_blank" style="margin-left: 0;">
+                            <div class="images" ><img src="assets/images/facebook.png"></div>
+                        </a>
+                        <a href="https://twitter.com/pelni162?lang=en" target="_blank">
+                            <div class="images"><img src="assets/images/twitter.png"></div>
+                        </a>
+                        <a href="https://www.instagram.com/pelni162/?hl=en" target="_blank">
+                            <div class="images"><img src="assets/images/instagram.png"></div>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCG1IAElUtPQHpRzq5L1ZiRA" target="_blank">
+                            <div class="images"><img src="assets/images/youtube.png"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="wrapper" style="width: auto;">
+                <div class="left">
+                    <div class="box">
+                        <div class="col">
+                            <h4>Anak Usaha</h4>
+                        </div>
+                        <div class="col">
+                            <div class="images"><a href="http://pelnilogistics.co.id/" target="_blank"><img src="https://www.pelni.co.id/cfind/source/images/website-setting/pelnilogistic.png"></a></div>
+                        </div>
+                        <div class="col">
+                            <div class="images"><a href="https://www.rspelni.co.id/" target="_blank"><img src="https://www.pelni.co.id/cfind/source/images/website-setting/rspelni.png"></a></div>
+                        </div>
+                        <div class="col">
+                            <div class="images"><a href="http://pelniservices.com/id/" target="_blank"><img src="https://www.pelni.co.id/cfind/source/images/website-setting/pidg.png"></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="box">
+                        <div class="col"><a href="https://lpse.pelni.co.id/eproc4" target="_blank"><img src="https://www.pelni.co.id/cfind/source/images/website-setting/lpse.png"></a></div>
+                        <div class="col"><a href="http://www.bumn.go.id/" target="_blank"><img src="https://www.pelni.co.id/cfind/source/images/logo web.png"></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="wrapper" style="width: auto;">
+                <div class="left">
+                    <p>Copyright ©2019 PT. Pelayaran Nasional Indonesia. All rights reserved. </p>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li><a href="https://www.pelni.co.id/privacy-policy-id">PRIVACY POLICY</a></li>
+                        <li><a href="https://www.pelni.co.id/term-of-use-id">TERM OF USE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
     <script>
         // Get the modal
         var modal = document.getElementById('id01');

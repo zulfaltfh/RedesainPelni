@@ -13,6 +13,12 @@
     --font: #111;
 }
 
+a {
+    color: var(--font);
+    text-decoration: none;
+    outline: none;
+}
+
 body{
     background-color: var(--white);
     color: var(--font);
@@ -40,6 +46,7 @@ nav {
     max-width: 90%;
     margin: 0 auto;
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: space-around;
 }
@@ -160,15 +167,21 @@ section {
     position: relative;
 }
 
-.home-logistik, .home-lifestyle {
+.home-logistik, .home-lifestyle, .home-layanan, .home-agen {
     position: relative;
-    margin-bottom: 10%;
+    margin-bottom: 6%;
 }
 
 .home-logistik .wrapper{
     padding: 0;
     margin: auto 0;
     width: auto;
+}
+
+.home-layanan .wrapper{
+    margin: 0 auto;
+    justify-content: left;
+    display: block;
 }
 
 .row:after {
@@ -198,8 +211,11 @@ section {
     /* margin-right: 10px; */
 }
 
-.content h1, h4 { 
+h1, h2, h3, h4 {
     font-family: 'Josefin Sans', sans-serif;
+}
+
+.content h1, .content h4, .content h2 { 
     margin-bottom: 24px;
 }
 
@@ -211,6 +227,12 @@ section {
 
 .content h1{
     font-size: 48px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.content h2{
+    font-size: 40px;
     font-weight: 600;
     font-style: italic;
 }
@@ -261,4 +283,5 @@ section {
     background: #f98015;
     bottom: 0;
 }
+
 
